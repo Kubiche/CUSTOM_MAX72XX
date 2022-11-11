@@ -16,10 +16,7 @@
         "maintainer": true
       }
     ],
-      "license": "MIT",
-      "dependencies": {
-      "ownername/print": "~1.3.0"
-    },
-    "frameworks": "arduino",
-    "platforms": "atmelavr"
+      "license": "MIT",      
+      "frameworks": "arduino",
+      "platforms": "atmelavr"
   }
