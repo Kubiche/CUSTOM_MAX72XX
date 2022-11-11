@@ -26,11 +26,6 @@ void MAX72XX::SetLedReg(uint8_t device, uint16_t opcode, uint16_t val)
   led_buffer[device] = (led_buffer[device] << 8);
   led_buffer[device] |= val;   
   SPI.beginTransaction(SPISettings(10000000, MSBFIRST, SPI_MODE0));  
-  debug("Device 1: ");
-  debuglnB(led_buffer[1]);
-  debug("Device 0: ");
-  debuglnB(led_buffer[0]);
-  debugln("sent");  
   for (uint8_t i = 0; i < number_of_devices_; i++)
   {
     digitalWrite(led_cs_, LOW);
