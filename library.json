@@ -1,0 +1,27 @@
+{
+    "name": "MAX72XX",
+    "version": "0.0.1",
+    "description": "MAX72XX led controller library for implementation of custom hardware built for a simpit",
+    "keywords": "simpit, diy, hardware, led, controller",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/Kubiche/MAX72XX.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Kubiche",
+        "email": "juanquy25@gmail.com",
+        "url": "",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "dependencies": {
+      "ownername/print": "~1.3.0"
+    },
+    "frameworks": "*",
+    "platforms": "*"
+  }
