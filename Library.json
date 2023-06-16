@@ -1,0 +1,22 @@
+{
+    "name": "CUSTOM_MAX72XX",
+    "version": "1.1.0",
+    "description": "MAX72XX led controller library for implementation of custom hardware built for a simpit",
+    "keywords": "simpit, diy, hardware, led, controller",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/Kubiche/MAX72XX.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Kubiche",
+        "email": "juanquy25@gmail.com",        
+        "maintainer": true
+      }
+    ],
+      "license": "MIT",      
+      "frameworks": "arduino",
+      "platforms": "atmelavr"
+  }
