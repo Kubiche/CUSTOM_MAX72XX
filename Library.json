@@ -1,6 +1,6 @@
 {
     "name": "CUSTOM_MAX72XX",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "MAX72XX led controller library for implementation of custom hardware built for a simpit",
     "keywords": "simpit, diy, hardware, led, controller",
     "repository":
