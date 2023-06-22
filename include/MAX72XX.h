@@ -2,6 +2,18 @@
 
 #include <spi.h>
 
+//#define DEBUG
+
+#ifdef DEBUG
+#define debug(x) Serial.print(x)
+#define debugln(x) Serial.println(x)
+#define debuglnB(x) Serial.println(x, BIN)
+#else
+#define debug(x)
+#define debugln(x)
+#define debuglnB(x) 
+#endif 
+
 //the opcodes for the MAX7221 and MAX7219
 #define OP_NOOP   0x00
 #define OP_DIGIT0 0x01
