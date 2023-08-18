@@ -20,7 +20,8 @@ MAX72XX::MAX72XX(int cs, int LED_Devices)
             // Assign values to the
             // memory blocks created
             digit_[i][j] = 0;
-        }     
+        }
+  }     
   pinMode(led_cs_, OUTPUT); // Set the CS pin as output
   digitalWrite(led_cs_, HIGH); // Set CS pin to High  
   for (uint8_t i = 0; i < number_of_devices_; i++)
