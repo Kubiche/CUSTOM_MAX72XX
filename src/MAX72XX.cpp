@@ -4,7 +4,7 @@
 #include <spi.h>
 
 
-MAX72XX(int cs, int LED_Devices)
+MAX72XX::MAX72XX(int cs, int LED_Devices)
 {
   led_cs_ = cs;
   number_of_devices_ = LED_Devices;
