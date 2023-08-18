@@ -1,12 +1,14 @@
 #include "MAX72XX.h"
 
+
 #include <spi.h>
 
 
- void MAX72XX::Begin(int cs, int LED_Devices)
+MAX72XX(int cs, int LED_Devices)
 {
   led_cs_ = cs;
-  number_of_devices_ = LED_Devices;  
+  number_of_devices_ = LED_Devices;
+  digit_ = new uint8_T[number_of_devices][8] = {0}; 
   pinMode(led_cs_, OUTPUT); // Set the CS pin as output
   digitalWrite(led_cs_, HIGH); // Set CS pin to High  
   for (uint8_t i = 0; i < number_of_devices_; i++)
