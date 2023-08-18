@@ -56,7 +56,7 @@ void MAX72XX::SetLed(uint8_t device, uint8_t dig, uint8_t seg, bool state)
 void MAX72XX::Show_in_bar(uint8_t device, uint8_t bar,uint8_t value)
 { 
   // Bars indexed from left to right from 1 to 6 
-  if ((value >= 0) && (value <= 10))
+  if ((value >= 0) && (value <= 10))  // Sanity checking the value to be displayed for validity.
   {
     const uint16_t Kfullbar[6] {0b1111111111000000, 0b0011111111110000, 0b0000111111111100, 0b0000001111111111, 0b1111111111000000, 0b0011111111110000};// Array to store the full bar value to manipulate for the actual value  
     uint8_t bar_top_byte;
